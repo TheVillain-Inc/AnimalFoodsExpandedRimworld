@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Animal Foods Extended</name>
+    <author>TheVillain</author>
+
+    <description>
+      You care about your pets right? Well, now you can show them you love them by feeding them right! New foods that keep pets happy, makes feeding herd animals more in keeping with other vanilla food progression, and offers something for those fussy Wargs. Now with MOAR NUZZLE.
+
+</description>
+    <packageId>TheVillain.Animalfoodsextended</packageId>
+    <supportedVersions>
+		<li>1.4
+    </li>
+    </supportedVersions>
+
+</ModMetaData>

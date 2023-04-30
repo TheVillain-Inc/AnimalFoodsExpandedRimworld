@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+
+<Defs>
+
+<RecipeDef ParentName="CookMealBase">
+  <defName>CookWetPetFood</defName>
+  <label>cook wet pet food</label>
+  <description>Cook a bowl of wet pet food from plant sources and raw meat.</description>
+  <jobString>Cooking wet pet food.</jobString>
+  <workAmount>500</workAmount>
+  <workSpeedStat>CookSpeed</workSpeedStat>
+  <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+  <effectWorking>Cook</effectWorking>
+  <soundWorking>Recipe_CookMeal</soundWorking>
+  <allowMixingIngredients>true</allowMixingIngredients>
+  <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+  <ingredients>
+    <li>
+      <filter>
+        <categories>
+          <li>MeatRaw</li>
+        </categories>
+      </filter>
+      <count>0.5</count>
+    </li>
+    <li>
+      <filter>
+        <categories>
+          <li>PlantFoodRaw</li>
+        </categories>
+      </filter>
+      <count>0.5</count>
+    </li>
+  </ingredients>
+  <recipeUsers>
+    <li>ElectricStove</li>
+    <li>FueledStove</li>
+  </recipeUsers>
+  <products>
+    <WetPetFood>5</WetPetFood>
+  </products>
+  <workSkill>Cooking</workSkill>
+</RecipeDef>
+
+<RecipeDef ParentName="CookMealBase">
+  <defName>CookWetPetFoodBulk</defName>
+  <label>cook wet pet food x4</label>
+  <description>Cook a bowl of wet pet food from plant sources and raw meat.</description>
+  <jobString>Cooking wet pet food.</jobString>
+  <workAmount>2000</workAmount>
+  <workSpeedStat>CookSpeed</workSpeedStat>
+  <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+  <effectWorking>Cook</effectWorking>
+  <soundWorking>Recipe_CookMeal</soundWorking>
+  <allowMixingIngredients>true</allowMixingIngredients>
+  <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+  <ingredients>
+    <li>
+      <filter>
+        <categories>
+          <li>MeatRaw</li>
+        </categories>
+      </filter>
+      <count>4</count>
+    </li>
+    <li>
+      <filter>
+        <categories>
+          <li>PlantFoodRaw</li>
+        </categories>
+      </filter>
+      <count>4</count>
+    </li>
+  </ingredients>
+  <recipeUsers>
+    <li>ElectricStove</li>
+    <li>FueledStove</li>
+  </recipeUsers>
+  <products>
+    <WetPetFood>20</WetPetFood>
+  </products>
+  <workSkill>Cooking</workSkill>
+</RecipeDef>
+
+
+<!-- Feedstock -->
+
+<RecipeDef ParentName="CookMealBase">
+  <defName>CookFeedstockGrazing</defName>
+  <label>prepare grazing feedstock</label>
+  <description>Grind up plant matter to break it down, then bulk it out with some hay.</description>
+  <jobString>Prepare Grazing Feedstock.</jobString>
+  <workAmount>520</workAmount>
+  <workSpeedStat>CookSpeed</workSpeedStat>
+  <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+  <effectWorking>Cook</effectWorking>
+  <soundWorking>Recipe_CookMeal</soundWorking>
+  <allowMixingIngredients>true</allowMixingIngredients>
+  <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Hay</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+    <li>
+      <filter>
+        <categories>
+          <li>PlantFoodRaw</li>
+        </categories>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+  <disallowedCategories>
+    <li>MeatRaw</li>
+    <li>AnimalProductRaw</li>
+  </disallowedCategories>
+</fixedIngredientFilter>
+  <recipeUsers>
+    <li>TableButcher</li>
+  </recipeUsers>
+  <products>
+    <Grazing_Feedstock>50</Grazing_Feedstock>
+  </products>
+  <workSkill>Cooking</workSkill>
+</RecipeDef>
+
+<RecipeDef ParentName="CookMealBase">
+  <defName>CookFeedstockGrazingBulk</defName>
+  <label>prepare grazing feedstock x4</label>
+  <description>Grind up plant matter to break it down, then bulk it out with some hay.</description>
+  <jobString>Prepare Grazing Feedstock.</jobString>
+  <workAmount>2080</workAmount>
+  <workSpeedStat>CookSpeed</workSpeedStat>
+  <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+  <effectWorking>Cook</effectWorking>
+  <soundWorking>Recipe_CookMeal</soundWorking>
+  <allowMixingIngredients>true</allowMixingIngredients>
+  <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Hay</li>
+        </thingDefs>
+      </filter>
+      <count>4</count>
+    </li>
+    <li>
+      <filter>
+        <categories>
+          <li>PlantFoodRaw</li>
+        </categories>
+      </filter>
+      <count>4</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+  <disallowedCategories>
+    <li>MeatRaw</li>
+    <li>AnimalProductRaw</li>
+  </disallowedCategories>
+</fixedIngredientFilter>
+  <recipeUsers>
+    <li>TableButcher</li>
+  </recipeUsers>
+  <products>
+    <Grazing_Feedstock>200</Grazing_Feedstock>
+  </products>
+  <workSkill>Cooking</workSkill>
+</RecipeDef>
+
+<!-- Rendered Meat -->
+
+<RecipeDef ParentName="CookMealBase">
+  <defName>CookRenderedMeat</defName>
+  <label>cook rendered meat</label>
+  <description>Rend down raw meats into its fats and protien, then allow it to solidify.</description>
+  <jobString>Cooking rendered meat.</jobString>
+  <workAmount>520</workAmount>
+  <workSpeedStat>CookSpeed</workSpeedStat>
+  <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+  <effectWorking>Cook</effectWorking>
+  <soundWorking>Recipe_CookMeal</soundWorking>
+  <allowMixingIngredients>true</allowMixingIngredients>
+  <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+  <ingredients>
+    <li>
+      <filter>
+        <categories>
+          <li>MeatRaw</li>
+        </categories>
+      </filter>
+      <count>1</count>
+    </li>
+
+  </ingredients>
+  <recipeUsers>
+    <li>ElectricStove</li>
+    <li>FueledStove</li>
+  </recipeUsers>
+  <products>
+    <RenderedMeat>20</RenderedMeat>
+  </products>
+  <fixedIngredientFilter>
+    <categories>
+      <li>MeatRaw</li>
+    </categories>
+    <disallowedThingDefs>
+      <li>RenderedMeat</li>
+    </disallowedThingDefs>
+    <disallowedCategories>
+      <li>AnimalProductRaw</li>
+      <li>PlantFoodRaw</li>
+    </disallowedCategories>
+  </fixedIngredientFilter>
+  <workSkill>Cooking</workSkill>
+</RecipeDef>
+
+<RecipeDef ParentName="CookMealBase">
+  <defName>CookRenderedMeatBulk</defName>
+  <label>cook rendered meat x4</label>
+  <description>Rend down raw meats into its fats and protien.</description>
+  <jobString>Cooking rendered meat.</jobString>
+  <workAmount>520</workAmount>
+  <workSpeedStat>CookSpeed</workSpeedStat>
+  <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+  <effectWorking>Cook</effectWorking>
+  <soundWorking>Recipe_CookMeal</soundWorking>
+  <allowMixingIngredients>true</allowMixingIngredients>
+  <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+  <ingredients>
+    <li>
+      <filter>
+        <categories>
+          <li>MeatRaw</li>
+        </categories>
+      </filter>
+      <count>4</count>
+    </li>
+
+  </ingredients>
+  <recipeUsers>
+    <li>ElectricStove</li>
+    <li>FueledStove</li>
+  </recipeUsers>
+  <products>
+    <RenderedMeat>80</RenderedMeat>
+  </products>
+  <fixedIngredientFilter>
+    <categories>
+      <li>MeatRaw</li>
+    </categories>
+    <disallowedThingDefs>
+      <li>RenderedMeat</li>
+    </disallowedThingDefs>
+  </fixedIngredientFilter>
+  <workSkill>Cooking</workSkill>
+</RecipeDef>
+
+
+</Defs>
