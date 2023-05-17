@@ -35,6 +35,12 @@
 				<count>0.5</count>
 			</li>
 		</ingredients>
+		<fixedIngredientFilter>
+			<disallowedThingDefs>
+				<li>Grazing_Feedstock</li>
+				<li>RenderedMeat</li>
+			</disallowedThingDefs>
+		</fixedIngredientFilter>
 		<recipeUsers>
 			<li>ElectricStove</li>
 			<li>FueledStove</li>
@@ -75,6 +81,12 @@
 				<count>2</count>
 			</li>
 		</ingredients>
+		<fixedIngredientFilter>
+			<disallowedThingDefs>
+				<li>Grazing_Feedstock</li>
+				<li>RenderedMeat</li>
+			</disallowedThingDefs>
+		</fixedIngredientFilter>
 		<recipeUsers>
 			<li>ElectricStove</li>
 			<li>FueledStove</li>
@@ -123,6 +135,9 @@
 				<li>MeatRaw</li>
 				<li>AnimalProductRaw</li>
 			</disallowedCategories>
+			<disallowedThingDefs>
+				<li>Grazing_Feedstock</li>
+			</disallowedThingDefs>
 		</fixedIngredientFilter>
 		<recipeUsers>
 			<li>TableButcher</li>
@@ -172,6 +187,9 @@
 				<li>MeatRaw</li>
 				<li>AnimalProductRaw</li>
 			</disallowedCategories>
+			<disallowedThingDefs>
+				<li>Grazing_Feedstock</li>
+			</disallowedThingDefs>
 		</fixedIngredientFilter>
 		<recipeUsers>
 			<li>TableButcher</li>
