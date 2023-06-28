@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+  <mods>
+    <li>Vanilla Plants Expanded - More Plants</li>
+</mods>
+
+	
+		<match Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+
+						<RecipeDef ParentName="CookMealBase">
+		<defName>CookFeedstockGrazingMoss</defName>
+		<label>make grazing feedstock from moss</label>
+		<description>Grind down hay and raw plants, then pellet it for long term storage.</description>
+		<jobString>Prepare Grazing Feedstock.</jobString>
+		<workAmount>520</workAmount>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VCE_RawMoss</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<disallowedCategories>
+				<li>MeatRaw</li>
+				<li>AnimalProductRaw</li>
+			</disallowedCategories>
+			<disallowedThingDefs>
+				<li>GrazingFeedstock</li>
+			</disallowedThingDefs>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>TableButcher</li>
+		</recipeUsers>
+		<products>
+			<GrazingFeedstock>50</GrazingFeedstock>
+		</products>
+		<workSkill>Cooking</workSkill>
+		<skillRequirements>
+      <Cooking>5</Cooking>
+    </skillRequirements>
+		<researchPrerequisite>Electricity</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef ParentName="CookMealBase">
+		<defName>CookFeedstockGrazingMossBulk</defName>
+		<label>make grazing feedstock from moss x4</label>
+		<description>Grind up plant matter to break it down, then bulk it out with some hay.</description>
+		<jobString>Prepare Grazing Feedstock.</jobString>
+		<workAmount>2080</workAmount>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VCE_RawMoss</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<disallowedCategories>
+				<li>MeatRaw</li>
+				<li>AnimalProductRaw</li>
+			</disallowedCategories>
+			<disallowedThingDefs>
+				<li>GrazingFeedstock</li>
+			</disallowedThingDefs>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>TableButcher</li>
+		</recipeUsers>
+		<products>
+			<GrazingFeedstock>200</GrazingFeedstock>
+		</products>
+		<workSkill>Cooking</workSkill>
+		<skillRequirements>
+      <Cooking>5</Cooking>
+    </skillRequirements>
+		<researchPrerequisite>Electricity</researchPrerequisite>
+	</RecipeDef>
+
+					</value>
+				</match>
+				</Operation>
+
+
+	
+</Patch>

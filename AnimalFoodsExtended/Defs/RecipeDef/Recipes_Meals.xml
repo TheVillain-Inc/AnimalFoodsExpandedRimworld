@@ -3,16 +3,15 @@
 
 <Defs>
 
-<!-- WetPetFood -->
+<!-- PetFood -->
 
 	<RecipeDef ParentName="CookMealBase">
-		<defName>CookWetPetFood</defName>
-		<label>cook wet pet food</label>
+		<defName>CookPetFood</defName>
+		<label>cook pet food</label>
 		<description>Cook a bowl of wet pet food from plant sources and raw meat.</description>
-		<jobString>Cooking wet pet food.</jobString>
+		<jobString>Cooking pet food.</jobString>
 		<workAmount>500</workAmount>
 		<workSpeedStat>CookSpeed</workSpeedStat>
-		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>
@@ -37,7 +36,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<disallowedThingDefs>
-				<li>Grazing_Feedstock</li>
+				<li>GrazingFeedstock</li>
 				<li>RenderedMeat</li>
 			</disallowedThingDefs>
 		</fixedIngredientFilter>
@@ -46,19 +45,18 @@
 			<li>FueledStove</li>
 		</recipeUsers>
 		<products>
-			<WetPetFood>10</WetPetFood>
+			<PetFood>10</PetFood>
 		</products>
 		<workSkill>Cooking</workSkill>
 	</RecipeDef>
 
 	<RecipeDef ParentName="CookMealBase">
-		<defName>CookWetPetFoodBulk</defName>
-		<label>cook wet pet food x4</label>
+		<defName>CookPetFoodBulk</defName>
+		<label>cook pet food x4</label>
 		<description>Cook a bowl of wet pet food from plant sources and raw meat.</description>
-		<jobString>Cooking wet pet food.</jobString>
+		<jobString>Cooking pet food.</jobString>
 		<workAmount>2000</workAmount>
 		<workSpeedStat>CookSpeed</workSpeedStat>
-		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>
@@ -83,7 +81,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<disallowedThingDefs>
-				<li>Grazing_Feedstock</li>
+				<li>GrazingFeedstock</li>
 				<li>RenderedMeat</li>
 			</disallowedThingDefs>
 		</fixedIngredientFilter>
@@ -92,7 +90,7 @@
 			<li>FueledStove</li>
 		</recipeUsers>
 		<products>
-			<WetPetFood>40</WetPetFood>
+			<PetFood>40</PetFood>
 		</products>
 		<workSkill>Cooking</workSkill>
 	</RecipeDef>
@@ -102,12 +100,11 @@
 
 	<RecipeDef ParentName="CookMealBase">
 		<defName>CookFeedstockGrazing</defName>
-		<label>prepare grazing feedstock</label>
+		<label>make grazing feedstock</label>
 		<description>Grind down hay and raw plants, then pellet it for long term storage.</description>
 		<jobString>Prepare Grazing Feedstock.</jobString>
 		<workAmount>520</workAmount>
 		<workSpeedStat>CookSpeed</workSpeedStat>
-		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>
@@ -136,14 +133,14 @@
 				<li>AnimalProductRaw</li>
 			</disallowedCategories>
 			<disallowedThingDefs>
-				<li>Grazing_Feedstock</li>
+				<li>GrazingFeedstock</li>
 			</disallowedThingDefs>
 		</fixedIngredientFilter>
 		<recipeUsers>
 			<li>TableButcher</li>
 		</recipeUsers>
 		<products>
-			<Grazing_Feedstock>50</Grazing_Feedstock>
+			<GrazingFeedstock>50</GrazingFeedstock>
 		</products>
 		<workSkill>Cooking</workSkill>
 		<skillRequirements>
@@ -154,12 +151,11 @@
 
 	<RecipeDef ParentName="CookMealBase">
 		<defName>CookFeedstockGrazingBulk</defName>
-		<label>prepare grazing feedstock x4</label>
+		<label>make grazing feedstock x4</label>
 		<description>Grind up plant matter to break it down, then bulk it out with some hay.</description>
 		<jobString>Prepare Grazing Feedstock.</jobString>
 		<workAmount>2080</workAmount>
 		<workSpeedStat>CookSpeed</workSpeedStat>
-		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>
@@ -188,14 +184,14 @@
 				<li>AnimalProductRaw</li>
 			</disallowedCategories>
 			<disallowedThingDefs>
-				<li>Grazing_Feedstock</li>
+				<li>GrazingFeedstock</li>
 			</disallowedThingDefs>
 		</fixedIngredientFilter>
 		<recipeUsers>
 			<li>TableButcher</li>
 		</recipeUsers>
 		<products>
-			<Grazing_Feedstock>200</Grazing_Feedstock>
+			<GrazingFeedstock>200</GrazingFeedstock>
 		</products>
 		<workSkill>Cooking</workSkill>
 		<skillRequirements>
@@ -213,7 +209,6 @@
 		<jobString>Cooking rendered meat.</jobString>
 		<workAmount>520</workAmount>
 		<workSpeedStat>CookSpeed</workSpeedStat>
-		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>
@@ -263,7 +258,6 @@
 		<jobString>Cooking rendered meat.</jobString>
 		<workAmount>2080</workAmount>
 		<workSpeedStat>CookSpeed</workSpeedStat>
-		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>

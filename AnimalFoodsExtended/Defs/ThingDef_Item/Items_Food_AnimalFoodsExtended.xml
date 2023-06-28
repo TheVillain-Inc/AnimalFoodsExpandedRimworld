@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!-- Wet Pet Food -->
+	<!-- Pet Food -->
 
 	<ThingDef ParentName="OrganicProductBase">
-		<defName>WetPetFood</defName>
-		<label>Wet Pet Food</label>
+		<defName>PetFood</defName>
+		<label>Pet Food</label>
 		<description>Animal food made from meat and plant sources. More nutritious than kibble. Humans can eat it, but they really really dont like it.</description>
 		<stackLimit>25</stackLimit>
 		<thingCategories>
@@ -52,12 +52,12 @@
 	<!-- Feedstock -->
 
 	<ThingDef ParentName="RoughPlantBase">
-		<defName>Grazing_Feedstock</defName>
+		<defName>GrazingFeedstock</defName>
 		<label>Grazing Feedstock</label>
-		<description>Plant sources mixed with Hay, ground and pelleted. Has the same nutrition as Kibble, is vegitarian and can only be eaten by grazing animals.</description>
+		<description>Plant sources mixed with Hay, ground and pelleted. Has the same nutrition as Kibble, is vegetarian and can only be eaten by grazing animals.</description>
 		<stackLimit>200</stackLimit>
 		<thingCategories>
-			<li>PlantFoodRaw</li>
+			<li>Foods</li>
 		</thingCategories>
 		<graphicData>
 			<texPath>Things/Items/GrazingFeedstock</texPath>
@@ -73,12 +73,6 @@
 			<optimalityOffsetFeedingAnimals>30</optimalityOffsetFeedingAnimals>
 			<ingestEffect>EatVegetarian</ingestEffect>
 			<ingestSound>RawVegetable_Eat</ingestSound>
-			<outcomeDoers>
-				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>PetWellFed</hediffDef>
-					<severity>0.5</severity>
-				</li>
-			</outcomeDoers>
 		</ingestible>
 		<comps>
 			<li Class="CompProperties_Ingredients">
@@ -121,12 +115,6 @@
 			<optimalityOffsetFeedingAnimals>20</optimalityOffsetFeedingAnimals>
 			<ingestEffect>EatVegetarian</ingestEffect>
 			<ingestSound>RawVegetable_Eat</ingestSound>
-			<outcomeDoers>
-				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>PetWellFed</hediffDef>
-					<severity>0.5</severity>
-				</li>
-			</outcomeDoers>
 		</ingestible>
 		<comps>
 			<li Class="CompProperties_Ingredients">
