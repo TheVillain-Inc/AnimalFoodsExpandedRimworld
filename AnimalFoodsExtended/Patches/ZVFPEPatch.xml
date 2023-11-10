@@ -1,137 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
-
 <Operation Class="PatchOperationFindMod">
-  <mods>
-    <li>Vanilla Furniture Expanded - Farming</li>
-     <li>Vanilla Plants Expanded - More Plants</li>
-  </mods>
+<mods>
+<li>Vanilla Furniture Expanded - Farming</li>
+</mods>
 
+<match Class="PatchOperationFindMod">
+<mods>
+<li>Vanilla Plants Expanded - More Plants</li>
+</mods>
 <match Class="PatchOperationSequence">
-
 <operations>
 
 
 <li Class="PatchOperationReplace">
-  <xpath>Defs/RecipeDef[defName="CookFeedstockGrazingMoss"]</xpath>
+  <xpath>Defs/RecipeDef[defName="CookFeedstockGrazingMoss"]/researchPrerequisite</xpath>
 <value>
-
-    <RecipeDef ParentName="CookMealBase">
-    <defName>CookFeedstockGrazingMoss</defName>
-    <label>make grazing feedstock from moss</label>
-    <description>Grind down hay and raw plants, then pellet it for long term storage.</description>
-    <jobString>Prepare Grazing Feedstock.</jobString>
-    <workAmount>520</workAmount>
-    <workSpeedStat>CookSpeed</workSpeedStat>
-    <effectWorking>Cook</effectWorking>
-    <soundWorking>Recipe_CookMeal</soundWorking>
-    <allowMixingIngredients>true</allowMixingIngredients>
-    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>VCE_RawMoss</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-      <li>
-        <filter>
-          <categories>
-            <li>PlantFoodRaw</li>
-          </categories>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <disallowedCategories>
-        <li>MeatRaw</li>
-        <li>AnimalProductRaw</li>
-      </disallowedCategories>
-      <disallowedThingDefs>
-        <li>GrazingFeedstock</li>
-      </disallowedThingDefs>
-    </fixedIngredientFilter>
-    <recipeUsers>
-      <li>TableButcher</li>
-    </recipeUsers>
-    <products>
-      <GrazingFeedstock>50</GrazingFeedstock>
-    </products>
-    <workSkill>Cooking</workSkill>
-    <skillRequirements>
-      <Cooking>5</Cooking>
-    </skillRequirements>
-    <researchPrerequisite>VFE_Res_FarmingTechniques</researchPrerequisite>
-  </RecipeDef>
+  <researchPrerequisite>VFE_Res_FarmingTechniques</researchPrerequisite>
 </value>
 </li>
 
-
 <li Class="PatchOperationReplace">
-  <xpath>Defs/RecipeDef[defName="CookFeedstockGrazingMossBulk"]</xpath>
+  <xpath>Defs/RecipeDef[defName="CookFeedstockGrazingMossBulk"]/researchPrerequisite</xpath>
 <value>
+  <researchPrerequisite>VFE_Res_FarmingTechniques</researchPrerequisite>
+</value>
+</li>
 
-  <RecipeDef ParentName="CookMealBase">
-    <defName>CookFeedstockGrazingMossBulk</defName>
-    <label>make grazing feedstock from moss x4</label>
-    <description>Grind up plant matter to break it down, then bulk it out with some hay.</description>
-    <jobString>Prepare Grazing Feedstock.</jobString>
-    <workAmount>2080</workAmount>
-    <workSpeedStat>CookSpeed</workSpeedStat>
-    <effectWorking>Cook</effectWorking>
-    <soundWorking>Recipe_CookMeal</soundWorking>
-    <allowMixingIngredients>true</allowMixingIngredients>
-    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>VCE_RawMoss</li>
-          </thingDefs>
-        </filter>
-        <count>4</count>
-      </li>
-      <li>
-        <filter>
-          <categories>
-            <li>PlantFoodRaw</li>
-          </categories>
-        </filter>
-        <count>4</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <disallowedCategories>
-        <li>MeatRaw</li>
-        <li>AnimalProductRaw</li>
-      </disallowedCategories>
-      <disallowedThingDefs>
-        <li>GrazingFeedstock</li>
-      </disallowedThingDefs>
-    </fixedIngredientFilter>
-    <recipeUsers>
-      <li>TableButcher</li>
-    </recipeUsers>
-    <products>
-      <GrazingFeedstock>200</GrazingFeedstock>
-    </products>
-    <workSkill>Cooking</workSkill>
-    <skillRequirements>
-      <Cooking>5</Cooking>
-    </skillRequirements>
-    <researchPrerequisite>VFE_Res_FarmingTechniques</researchPrerequisite>
-  </RecipeDef>
+</operations>
 
-          </value>
-        </li>
-      </operations>
-
+</match>
 
 </match>
 
 </Operation>
 
+
+
+
+  
 </Patch>
+
+
