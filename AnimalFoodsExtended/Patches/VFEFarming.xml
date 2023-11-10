@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+  <mods>
+    <li>Vanilla Furniture Expanded - Farming</li>
+</mods>
+
+<match Class="PatchOperationSequence">
+
+<operations>
+
+<li Class="PatchOperationReplace">
+  <xpath>Defs/RecipeDef[defName="CookFeedstockGrazing"]/researchPrerequisite</xpath>
+<value>
+  <researchPrerequisite>VFE_Res_FarmingTechniques</researchPrerequisite>
+</value>
+</li>
+
+<li Class="PatchOperationReplace">
+  <xpath>Defs/RecipeDef[defName="CookFeedstockGrazingBulk"]/researchPrerequisite</xpath>
+<value>
+  <researchPrerequisite>VFE_Res_FarmingTechniques</researchPrerequisite>
+</value>
+</li>
+
+<li Class="PatchOperationReplace">
+  <xpath>Defs/RecipeDef[defName="CookRenderedMeat"]/researchPrerequisite</xpath>
+<value>
+  <researchPrerequisite>VFE_Res_FarmingTechniques</researchPrerequisite>
+</value>
+</li>
+
+<li Class="PatchOperationReplace">
+  <xpath>Defs/RecipeDef[defName="CookRenderedMeatBulk"]/researchPrerequisite</xpath>
+<value>
+  <researchPrerequisite>VFE_Res_FarmingTechniques</researchPrerequisite>
+</value>
+</li>
+
+</operations>
+
+</match>
+
+</Operation>
+
+
+
+
+  
+</Patch>
